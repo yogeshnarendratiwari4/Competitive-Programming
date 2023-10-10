@@ -3,7 +3,10 @@ using namespace std;
 
 int largestElement(vector<int> &arr, int n) {
    int maximum_element = INT_MIN;
-   
+   for(auto x : arr){
+      maximum_element = max(x,maximum_element);
+   }
+   return maximum_element;
 }
 
 
